@@ -1,0 +1,28 @@
+{
+  "name": "natalbot",
+  "version": "1.0.0",
+  "description": "Telegram bot for natal cards reading",
+  "main": "dist/bot.js",
+  "repository": "https://github.com/Wani4ka/natalbot",
+  "author": "Wani4ka",
+  "license": "MIT",
+  "dependencies": {
+    "@grammyjs/conversations": "^1.1.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dayjs": "^1.11.9",
+    "dotenv": "^16.3.1",
+    "grammy": "^1.18.1",
+    "node-fetch": "v2"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.4",
+    "nodemon": "^3.0.1",
+    "prettier": "3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "dev": "nodemon src/bot.ts",
+    "build": "tsc"
+  }
+}
