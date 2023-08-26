@@ -20,7 +20,7 @@ async function info(conversation: Conversation<Context & ConversationFlavor>, ct
 		await ctx.reply(config.lang.askDateOfBirth, MODE_MARKDOWN)
 		const dobString = await conversation.form.text()
 		if (dayjs(dobString, 'DD.MM.YYYY', true).isValid()) {
-			dateOfBirth = dobString.split('.').map(parseInt)
+			dateOfBirth = dobString.split('.').map(x => parseInt(x))
 		}
 	}
 	let timeOfBirth: string[] = []
